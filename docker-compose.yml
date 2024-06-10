@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  blazortemplateproject:
+    image: ${DOCKER_REGISTRY-}blazortemplateproject
+    build:
+      context: .
+      dockerfile: BlazorTemplateProject/Dockerfile
+  db:
+      image: mysql:5.7
+      environment:
+        MYSQL_ROOT_PASSWORD: rootpassword  
+        MYSQL_DATABASE: blazortemplate         
+        MYSQL_USER: blazortemplate                   
+        MYSQL_PASSWORD: blazortemplate123       
+      volumes:
+        - blazortemplate-data:/var/lib/mysql        
+      ports:
+        - "3306:3306"                      
+      restart: always
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: blazortemplate
+      PMA_PASSWORD: blazortemplate123   
+    ports:
+      - "8080:80"                         
+    restart: always
+    depends_on:
+      - db
+
+volumes:
+  blazortemplate-data: 

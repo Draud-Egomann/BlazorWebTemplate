@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "blazortemplateproject": "StartDebugging",
+        "db": "StartWithoutDebugging",
+        "phpmyadmin": "StartWithoutDebugging"
+      }
+    },
+    "DB only": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "blazortemplateproject": "DoNotStart",
+        "db": "StartWithoutDebugging",
+        "phpmyadmin": "StartWithoutDebugging"
+      }
+    }
+  }
+}
