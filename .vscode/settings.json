@@ -1,0 +1,28 @@
+{
+  /*
+   * editor
+   */
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  /*
+   * explorer
+   */
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "Appsettings.json": "Appsettings.Development.json",
+    "*.csproj": "${capture}.csproj.user",
+    "*.razor": "${capture}.razor.css, ${capture}.razor.js, ${capture}.razor.cs",
+    "docker-compose.dcproj": "docker-compose.yml, docker-compose.override.yml, docker-compose.dcproj.user, launchSettings.json",
+    "*.cs": "${capture}.cs.meta",
+    "index.html": "favicon.ico",
+    "package.json": "package-lock.json, node_modules",
+    "tsconfig.json": "tsconfig.*.json",
+    "webpack.config.js": "webpack.config.*.js"
+  },
+  "files.exclude": {
+    "**/.*": true,
+    "**/bin": true,
+    "**/obj": true,
+    "LICENSE": true
+  }
+}
