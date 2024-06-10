@@ -16,7 +16,11 @@ The `docker-compose` project contains two start profiles, `docker-compose` and '
 
 ## Create Migrations
 
-To create a migration the Data Directory must be the current Project Directory, then a migration can be created normally.
+To create a migration the Data Directory must be the current Project Directory, then a migration can be created normally with
+
+```bash
+Add-Migration [Name]
+```
 
 ## Project Structure
 
