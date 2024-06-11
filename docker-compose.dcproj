@@ -4,6 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
+    <DockerComposeProjectName>blazor_template</DockerComposeProjectName>
     <ProjectGuid>9f359694-ec13-4d4c-863b-4e984885be5f</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
