@@ -10,6 +10,10 @@ This is a template for a Blazor Web App with a Docker Compose configuration also
 
 ## Project Configurations
 
+### Web
+
+The `Web` project contains the Blazor Web App and is configured to use the `Data` project as the database context.
+
 ### docker-compose
 
 The `docker-compose` project contains two start profiles, `docker-compose` and 'DB only'. The `docker-compose` profile will start the application and the database, while the 'DB only' profile will only start the database.
